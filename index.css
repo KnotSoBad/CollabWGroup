@@ -1,0 +1,16 @@
+.block_element {
+    width: 355px;
+    background-color: lightblue;
+    margin-left: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 35px;
+}
+
+section {
+    background-color: grey;
+    padding: 25px;
+    background-image: url("https://www.lotus-qa.com/wp-content/uploads/2020/02/testing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
