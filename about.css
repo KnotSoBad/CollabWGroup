@@ -1,0 +1,15 @@
+.block_element {
+    width: 355px;
+    background-color: lightblue;
+    margin-left: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 35px;
+}
+
+section {
+
+    padding: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
