@@ -1,0 +1,296 @@
+#content {
+    margin-top: 34px;
+    margin-bottom: 32px;
+    background: transparent;
+  }
+  
+  .contentWrapper {
+    padding: 51px 59px;
+    border: 1px solid #EEE;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+  
+  .contentWrapper p.no-articles {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .contentWrapper {
+      padding: 30px;
+    }
+  }
+  
+  /* Sort */
+  
+  .sort,
+  .icon-print {
+    display: none !important;
+  }
+  
+  /* Help */
+  p.help {
+    margin-bottom: 28px;
+  }
+  
+  /* Related */
+  .related {
+    padding-top: 55px;
+  
+    border: 1px solid #eee;
+    border-top: 0;
+  }
+  
+  .related h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #AAA;
+    margin-bottom: 22px;
+  }
+  
+  .related ul {
+    margin-bottom: 21px;
+  }
+  
+  .related ul>li a {
+    color: #FF4D63;
+    font-size: 18px;
+  }
+  
+  /*--------------------------------------------------------------
+  3.1 Category Page
+  --------------------------------------------------------------*/
+  
+  /* Search */
+  
+  .icon-search {
+    margin-top: 15px;
+    color: #FF4D63;
+  }
+  
+  /* Articles */
+  
+  .articleList li {
+    margin: 0.6em 0;
+  }
+  
+  #categoryHead h1 {
+    font-size: 35px;
+    margin-bottom: 32px;
+  }
+  
+  /*--------------------------------------------------------------
+  3.2 Article Page
+  --------------------------------------------------------------*/
+  
+  #fullArticle p,
+  #fullArticle ul,
+  #fullArticle ol,
+  #fullArticle li,
+  #fullArticle div,
+  #fullArticle blockquote,
+  #fullArticle dd,
+  #fullArticle table {
+    font-size: 17px;
+    margin-bottom: 1.3em;
+  }
+  
+  #fullArticle .title {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+  
+  #fullArticle p,
+  #fullArticle ul,
+  #fullArticle ol,
+  #fullArticle li,
+  #fullArticle div,
+  #fullArticle blockquote,
+  #fullArticle dd,
+  #fullArticle table {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.9;
+  }
+  
+  .articleFoot {
+    margin-top: 30px;
+  }
+  
+  .articleFoot .icon-contact {
+    display: none;
+  }
+  
+  .articleFoot p,
+  .articleFoot time {
+    font-family: 'proxima-nova-soft', 'Helvetica', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: #AAA;
+  }
+  
+  #sbContact {
+    color: #666 !important;
+    border-bottom: 0;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .articleFoot p,
+    .articleFoot time {
+        display: block;
+        text-align: center;
+        float: none !important;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  4.0 Contact Modal
+  --------------------------------------------------------------*/
+  
+  #contactModal {
+    border: 0px solid transparent;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 0 43.5px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 43.5px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 43.5px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+  }
+  
+  #contactModal h2 {
+    background: transparent;
+    color: #aaa;
+    border-bottom: none;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 17px;
+    font-size: 35px;
+    font-weight: 300;
+  }
+  
+  .control-group input {
+    height: 20px;
+  }
+  
+  .control-group:nth-child(5) {
+    display: none;
+  }
+  
+  .control-group textarea {
+    height: 125px;
+    resize: none;
+  }
+  
+  .control-group input,
+  .control-group textarea {
+    width: 300px !important;
+    background-color: #F5F5F5;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: none !important;
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  
+  #content .control-group input,
+  #content .control-group textarea {
+    width: 95% !important;
+  }
+  
+  @media (max-width: 480px) {
+    #content .control-group input,
+    #content .control-group textarea {
+      width: 80% !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #content .control-group input,
+    #content .control-group textarea {
+      width: 85% !important;
+    }
+  }
+  
+  #contactModal .modal-body {
+    max-height: 475px;
+  }
+  
+  .control-group input::-webkit-input-placeholder {
+     color: #C5C5C5 !important;
+     opacity: 1 !important;
+  }
+  
+  .control-group input:-moz-placeholder {
+    color: #C5C5C5 !important;
+    opacity: 1 !important;
+  }
+  
+  .control-group input::-moz-placeholder {
+    color: #C5C5C5 !important;
+    opacity: 1 !important;
+  }
+  
+  .control-group input:-ms-input-placeholder {
+    color: #C5C5C5 !important;
+    opacity: 1 !important;
+  }
+  
+  .control-group .control-label {
+    color: #666;
+    padding-top: 15px;
+    font-size: 18px;
+  }
+  
+  #content .control-group .control-label {
+    margin-bottom: 15px;
+  }
+  
+  #contactModal .form-actions,
+  #contactForm .form-actions {
+    margin-top: 25px;
+  }
+  
+  #contactModal .form-actions .btn,
+  #contactForm .form-actions .btn {
+    width: 175px !important;
+    height: 55px;
+    border: 0;
+    background-color: #FF4D63;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-position: initial;
+    background-image: none;
+    color: white;
+    text-shadow: none !important;
+    font-size: 18px;
+  }
+  
+  #contactModal .form-actions .btn:hover,
+  #contactForm .form-actions .btn:hover {
+    background-color: #E64558;
+  }
+  
+  #contactModal .parsley-error, #contactForm .parsley-error {
+    border: 1px solid #E64558;
+  }
+  
+  #contactModal .parsley-error-list, #contactForm .parsley-error-list {
+    margin-top: 5px;
+    color: #E64558;
+  }
+  
+  .modal #closeBtn:hover .icon-close:before {
+    color: #ff4d63;
+  }
+  
+  .icon-close:before,
+  .featherlight-close-icon:before {
+    color: #b5a99e;
+  }
