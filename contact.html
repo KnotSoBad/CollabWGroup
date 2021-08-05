@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Contact</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LFBJ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- Home Button -->
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <!-- About Button -->
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <!-- Contact Button -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- Gallery Button -->
+            <li class="nav-item active">
+              <a class="nav-link" href="extra.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section style="background-image: url(https://slack-imgs.com/?c=1&amp;o1=ro&amp;url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0053%2F6513%2F7472%2Fproducts%2Fnewyorkcitysunset911.jpg%3Fv%3D1544036357); padding: 25px; background-size: cover; background-repeat: no-repeat;">
+        <div style="width: 355px; background-color: lightblue; margin-left: auto; margin: 0 auto; text-align: center; padding: 35px;">
+          <h4>Contact Us</h4>
+        </div>
+      </section>
+      <section id="main-content" class="span9">
+        <div class="contentWrapper">
+          <div id="links">
+            <p>Contact us at support@lfbj.com or use the form below.</p>
+          </div>
+          <form id="contactForm" class="contact" data-parsley-validate="" novalidate="" method="post" enctype="multipart/form-data" action="/contact">
+            <div class="control-group">
+              <label for="name" class="control-label">Name</label>
+              <div class="controls">
+                <input type="text" name="name" id="name" value="" placeholder="(optional)" autofocus="">
+              </div>
+            </div>
+            <!--/controls-->
+            <!--/control-group-->
+            <div class="control-group">
+              <label for="email" class="control-label">Email</label>
+              <div class="controls">
+                <input type="email" name="email" id="email" data-parsley-required="true" data-parsley-type="email" data-parsley-notblank="true" data-parsley-trigger="change" data-parsley-required-message="Email is required" value="">
+              </div>
+              <!--/controls-->
+            </div>
+            <!--/control-group-->
+            <div class="control-group">
+              <label for="subject" class="control-label">Subject</label>
+              <div class="controls">
+                <input type="text" name="subject" id="subject" data-parsley-required="true" data-parsley-notblank="true" value="" data-parsley-required-message="Subject is required">
+              </div>
+              <!--/controls-->
+            </div>
+            <!--/control-group-->
+            <div class="control-group">
+              <label for="message" class="control-label">Message</label>
+              <div class="controls">
+                <textarea name="message" id="message" data-parsley-required="true" data-parsley-notblank="true" data-parsley-required-message="Message is required"></textarea>
+              </div>
+              <!--/controls-->
+            </div>
+            <!--/control-group-->
+            <!-- /control-group -->
+            <div class="control-group">
+              <label for="upload" class="control-label">Upload file</label>
+              <div class="controls">
+                <input id="file-upload" type="file" name="upload" data-parsley-max-file-size="10">
+              </div>
+            </div>
+            <div class="form-actions">
+                <div class="g-recaptcha" data-sitekey="6LdhmSQTAAAAAMdAtrGjQeyN1HWWWAc5iN8FZ_MD"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdhmSQTAAAAAMdAtrGjQeyN1HWWWAc5iN8FZ_MD&amp;co=aHR0cHM6Ly9zdXBwb3J0LnF1YW50aWMuZWR1OjQ0Mw..&amp;hl=en&amp;v=RDRwZ7RcROX_wCxEJ01WeqEX&amp;size=normal&amp;cb=vpgpj4n6t2tt" width="304" height="78" role="presentation" name="a-mr69gq4zowjx" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+              <input type="submit" class="btn" value="Send">
+            </div>
+            <!--/form-actions-->
+          </form>
+        </div>
+      </section>
 </body>
 </html>
